@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.maaz.calculator.Calculator_Beta"
+    tools:showIn="@layout/activity_calculator__beta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Calculator"
+            android:textSize="35sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@id/result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@android:color/background_light"
+                android:gravity="bottom|left"
+                android:text="0.0"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:text="X"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@android:color/holo_blue_bright" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:orientation="horizontal" android:layout_weight="1">
+        <Button
+            style="@style/Button" android:text="7" android:id="@+id/seven" />
+        <Button
+            style="@style/Button" android:text="8" android:id="@+id/eight"/>
+        <Button
+            style="@style/Button" android:id="@+id/nine" android:text="9"/>
+        <Button
+            style="@style/Button" android:id="@+id/div" android:text="/"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:orientation="horizontal" android:layout_weight="1">
+        <Button
+            style="@style/Button" android:id="@+id/four" android:text="4"/>
+        <Button
+            style="@style/Button" android:id="@+id/five" android:text="5"/>
+        <Button
+            style="@style/Button" android:id="@+id/six" android:text="6"/>
+        <Button
+            style="@style/Button" android:id="@+id/mul" android:text="*"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:orientation="horizontal" android:layout_weight="1">
+        <Button
+            style="@style/Button" android:id="@+id/one" android:text="1"/>
+        <Button
+            style="@style/Button" android:id="@+id/two" android:text="2"/>
+        <Button
+            style="@style/Button" android:id="@+id/three" android:text="3"/>
+        <Button
+            style="@style/Button" android:id="@+id/sub" android:text="-"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:orientation="horizontal" android:layout_weight="1">
+
+        <Button
+            style="@style/Button" android:id="@+id/reset" android:text="C"/>
+        <Button
+            style="@style/Button" android:id="@+id/zero" android:text="0"/>
+
+        <Button
+            style="@style/Button" android:id="@+id/equal" android:text="="/>
+
+        <Button
+            android:id="@+id/add"
+            style="@style/Button"
+            android:text="+" />
+
+    </LinearLayout>
+</LinearLayout>
